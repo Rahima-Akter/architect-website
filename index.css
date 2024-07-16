@@ -1,0 +1,209 @@
+/* fonts link */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Work Sans", sans-serif;
+}
+
+/* shared styles */
+
+.dark-two{
+    color: rgba(66, 66, 66, 1);
+}
+
+.dark-three{
+    color: rgba(114, 114, 114, 1);
+}
+
+.primary-btn{
+    color: white;
+    background-color: rgba(255, 144, 14, 1);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1.25rem 1.50rem;
+    text-decoration: none;
+    border-radius: .75rem;
+}
+
+/* header styles */
+
+.header-body{
+    background-color: rgba(255, 144, 14, 0.1);
+    max-width: 1920px;
+}
+
+
+
+/* nav styles */
+
+.navitems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 18%;
+}
+
+.navlist{
+    display: flex;
+    gap: 20px;
+    justify-items: center;
+}
+.navlist>li{
+    list-style: none;
+}
+
+.navlinks{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.logo{
+    font-size: 2.50rem;
+    color: rgba(19, 19, 19, 1);
+    font-weight: 700;
+}
+
+/* nav styles ends */
+
+/* architect grp styles */
+.architect-sec{
+    margin: 0 18%;
+    text-align: center;
+}
+
+.architect-sec>img{
+    width: 100%;
+}
+
+.arch-title{
+    font-weight: 700;
+    font-size: 3.50rem;
+    color: rgba(19, 19, 19, 1);
+}
+
+.architect-sec>a{
+    text-decoration: none;
+}
+
+.arch-description{
+    font-size: 1rem;
+    color: rgba(114, 114, 114, 1);
+    margin: -20px 0 40px 0;
+}
+
+#arch-box{
+    margin: 0 528px 70px 528px;
+}
+
+/* quick-list styles */
+
+.quick-list{
+    display: flex;
+    margin: 130px 18%;
+}
+
+.quick-list-sec > a{
+    text-decoration: none;
+}
+
+#quick-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+#quick-img>img{
+    width: 100%;
+}
+
+#quick-box{
+    width: 40%;
+    justify-items: center;
+    margin: 150px 0 0 60px;
+}
+
+.quick-title{
+    font-size: 2.75rem;
+    font-weight: 500;
+    color: gray;
+}
+
+#our-feature{
+    font-weight: 700;
+    color: black;
+}
+
+#features{
+    font-weight: 700;
+    color: rgba(255, 144, 14, 1);
+}
+
+.quick-description{
+    font-size: 1rem;
+    margin-bottom: 40px;
+    margin-top: -30px;
+}
+
+/* small device */
+
+@media screen and (max-width: 576px) {
+    .navitems{
+        display: none;
+    }
+
+    /* .navlist{
+        display: none;
+    } */
+
+    .arch-description{
+        font-size: .80rem;
+        margin-bottom: 30px;
+    }
+
+    .arch-title{
+        font-size: 2rem;
+    }
+
+    #arch-box{
+        margin: 0 10% 30px 10%;
+    }
+
+    .primary-btn{
+        font-size: 1rem;
+        padding: 1rem 1.25rem;
+    }
+
+}
+
+/* medium device */
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+
+    .logo{
+        font-size: 2rem;
+    }
+
+    .navlist{
+        gap: 15px;
+    }
+
+    .navlinks{
+        font-size: 1rem;
+    }
+
+    .arch-title{
+        font-size: 2.75rem;
+    }
+ 
+    #arch-box{
+        margin: 0 20% 30px 20%;
+    }
+
+    .primary-btn{
+        font-size: 1rem;
+        padding: 1rem 1.25rem;
+    }
+
+
+}
