@@ -16,6 +16,12 @@
     color: rgba(114, 114, 114, 1);
 }
 
+.common-title{
+    font-weight: 700;
+    font-size: 2.75rem;
+    color: rgba(19, 19, 19, 1);
+}
+
 .primary-btn{
     color: white;
     background-color: rgba(255, 144, 14, 1);
@@ -100,7 +106,7 @@
 
 .quick-list{
     display: flex;
-    margin: 130px 18%;
+    margin: 130px 18% 80px 18%;
 }
 
 .quick-list-sec > a{
@@ -145,6 +151,41 @@
     margin-top: -30px;
 }
 
+/* some sectdion styles */
+
+.some-description{
+    margin: -30px 0 40px 0;
+}
+
+.some-facts{
+    text-align: center;
+}
+
+.box-description{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.some-box{
+    border: 2px solid rgba(255, 144, 14, 1);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    line-height: 0px;
+}
+
+.some-box-items{
+    margin: 0 18%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.numbers{
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
 /* small device */
 
 @media screen and (max-width: 576px) {
@@ -174,7 +215,41 @@
         padding: 1rem 1.25rem;
     }
 
+    /* quick-list styles */
+
+    .quick-list{
+        flex-direction: column;
+        margin: 50px 20%;
+    }
+
+    #quick-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .quick-title{
+        font-size: 2.50rem;
+    }
+
+    #quick-box{
+        text-align: center;
+        width: 100%;
+        margin: 20px 20px 0 0;
+    }
+
+    /* some facts styles */
+
+    .some-box-items{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .some-description{
+        margin: -30px 20px 40px 20px;
+    }
+
 }
+
+
 
 /* medium device */
 
@@ -203,6 +278,30 @@
     .primary-btn{
         font-size: 1rem;
         padding: 1rem 1.25rem;
+    }
+
+    /* quick-list styles */
+
+    .quick-list{
+        flex-direction: column;
+        margin: 60px 18%;
+    }
+
+    #quick-box{
+        text-align: center;
+        width: 100%;
+        margin: 15px 20px 0 0;
+    }
+
+     /* some facts styles */
+
+     .some-box-items{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .some-description{
+        margin: -30px 40px 40px 40px;
     }
 
 
