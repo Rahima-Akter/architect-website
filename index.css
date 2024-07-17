@@ -55,6 +55,10 @@ body{
     margin: 0 18%;
 }
 
+.navitems > i{
+    display: none;
+}
+
 .navlist{
     display: flex;
     gap: 20px;
@@ -275,15 +279,22 @@ footer > p{
 /* small device */
 
 @media screen and (max-width: 576px) {
-    
 
     .navitems{
-        display: none;
+        margin: 0 10%;
     }
 
-    /* .navlist{
+    .navitems > i{
+        display: block;
+    }
+    
+    .logo{
+        font-size: 1.25rem;
+    }
+
+    .navlist{
         display: none;
-    } */
+    }
 
     .arch-description{
         font-size: .80rem;
