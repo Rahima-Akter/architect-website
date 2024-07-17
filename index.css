@@ -85,6 +85,7 @@ body{
 
 .architect-sec>img{
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .arch-title{
@@ -156,6 +157,58 @@ body{
     margin-top: -30px;
 }
 
+/* features you will enjoy styles */
+
+.features-enjoy{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 0 15%;
+}
+
+.features-items img{
+    width: 90%;
+    margin-top: 30px;
+}
+
+.features-items{
+    padding: 0 25px;
+}
+
+.feature-title{
+    font-weight: 700;
+    font-size: 2.75rem;
+    color: rgba(19, 19, 19, 1);
+    border-left: 8px solid rgba(255, 144, 14, 1);
+    padding-left: 8px;
+}
+
+.features-box{
+    margin-bottom: 20px;
+    padding: 5px 25px 5px 15px;
+    box-shadow: 0 0 15px rgb(190, 190, 190);
+}
+
+.experience-btn{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    font-weight: 700;
+    font-size: 2.50rem;
+    width: 220px;
+    height: 130px;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: -300px;
+    line-height: 28px;
+    border-radius: 10px;
+    border: none;
+}
+
+.experience{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 /* some sectdion styles */
 
 .some-description{
@@ -222,6 +275,8 @@ footer > p{
 /* small device */
 
 @media screen and (max-width: 576px) {
+    
+
     .navitems{
         display: none;
     }
@@ -267,6 +322,31 @@ footer > p{
         text-align: center;
         width: 100%;
         margin: 20px 20px 0 0;
+    }
+
+    /* features you will enjoy styles */
+
+    .feature-title{
+        font-size: 2rem;
+    }
+
+    .features-enjoy {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin: 0 5%;
+    }
+
+    .features-items img{
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .experience-btn{
+        font-size: 2rem;
+        width: 200px;
+        height: 100px;
+        margin-left: 60px;
+        margin-top: -50px;
     }
 
     /* some facts styles */
@@ -350,6 +430,28 @@ footer > p{
         margin: 15px 20px 0 0;
     }
 
+    /* features you will enjoy styles */
+
+    .feature-title{
+        font-size: 2rem;
+    }
+
+    .features-enjoy {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin: 0 15%;
+    }
+
+    .features-items img{
+        width: 80%;
+        transform: translate(14%, 0);
+        margin-top: -5px;
+    }
+
+    .experience-btn{
+        display: none;
+    }
+
      /* some facts styles */
 
      .some-box-items{
@@ -376,7 +478,7 @@ footer > p{
     /* footer styles */
 
     footer{
-        margin: 100px 8% 30px 8%;
+        margin: 60px 8% 30px 8%;
     }
     footer > p{
         font-size: .75rem;
